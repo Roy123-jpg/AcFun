@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const HistoryWarpper = styled.div`
     overflow: scroll;
     width: 18.75rem;
+    .adm-popup-close-icon adm-plain-anchor {
+        
+    }
 `
 
 

@@ -62,6 +62,7 @@ const All = ({ history }) => {
 export default function History({ history }) {
     return (
         <HistoryWarpper>
+            {/* <i onClick={setVisible(false)}></i> */}
             <Tabs>            
                 <Tabs.Tab title='全部' key='all'>
                     <All history={history} />

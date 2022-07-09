@@ -30,16 +30,21 @@ const HistoryIcon = () => {
             </div>
             <Popup
                 visible={visible}
-                showCloseButton
+                // showCloseButton
+                onMaskClick={() => {
+                    setVisible(false)
+                  }}
                 onClose={() => {
                     setVisible(false)
                 }}
+                // style={{"--z-index":1}}
 
                 position='right'
             >
                 <div
                     style={{ height: '100%', overflowY: 'scroll' }}
                 >
+
                     <History history={count} />
                 </div>
 

@@ -8,6 +8,7 @@ export const FootWrapper = styled.div`
     bottom: 0;
     left: 0;
     display: flex;
+    z-index: 999;
     a {
         flex: 1;
         display: flex;

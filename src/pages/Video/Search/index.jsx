@@ -30,7 +30,7 @@ const HistoryIcon = () => {
             </div>
             <Popup
                 visible={visible}
-                // showCloseButton
+                showCloseButton
                 onMaskClick={() => {
                     setVisible(false)
                   }}

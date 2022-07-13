@@ -63,9 +63,10 @@ export const Warpper = styled.div`
             }
         }
         .feed-item-title {
-            font-size: .7rem;
+            font-size: .65rem;
+            font-weight: 500;
             color: #333;
-            line-height: .95rem;
+            line-height: .8rem;
         }
         .line-cut1, .line-cut2 {
             overflow: hidden;

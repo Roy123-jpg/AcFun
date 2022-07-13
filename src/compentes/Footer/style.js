@@ -20,7 +20,10 @@ export const FootWrapper = styled.div`
             color: red;
         }
         i{
-            font-size: 1.5em;
+            font-size: 1.5rem;
+        }
+        span {
+            font-size: 0.5rem;
         }
     }
 `

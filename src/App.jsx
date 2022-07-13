@@ -7,11 +7,11 @@ import RoutesConfig from '@/routes'
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      <Suspense fallback={<div>Loading</div>}>
-        <RoutesConfig></RoutesConfig>
-      </Suspense>
-      <Footer />
+      {/* <Header /> */}  
+        <Suspense fallback={<div>Loading</div>}>
+          <RoutesConfig></RoutesConfig>
+        </Suspense>
+        <Footer />
     </div>
   )
 }

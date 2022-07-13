@@ -7,10 +7,15 @@ export default function SetMeal() {
         new Swiper('.home_info_banners', {
             loop: true,
             autoplay: {
-                delay: 3000
+                delay: 1500 
             },
             pagination: {
                 el: '.swiper-pagination'
+            },
+            on: {
+                slideChangeTransitionEnd: function() {
+                    this.autoplay.start();// 手动点击后设置自动播放
+                },
             }
         })
     }, [])

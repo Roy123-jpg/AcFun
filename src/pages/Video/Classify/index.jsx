@@ -7,7 +7,8 @@ import { getVideo } from '@/api/request'
 import Video from './Videos'
 import { TabWarpper } from './styled'
 import AllChannels from '../AllChannels'
-// import { lorem } from 'demos'
+// import loading from '../../../compentes/common/loading-v2'
+import Scroll from '../../../compentes/common/Scroll'
 
 export default function Classify() {
     const [visible1, setVisible1] = useState(false)
@@ -24,17 +25,31 @@ export default function Classify() {
             setHistory(HistoryData)
         })()
     }, [])
-    console.log(video);
+    // console.log(video);
+    const tabItems = [
+        { key: 'fruits', title: '水果' },
+        { key: 'vegetables', title: '蔬菜' },
+        { key: 'animals', title: '动物' },
+    ]
     return (
         <TabWarpper>
             <div className="tabs">
+                {/* <div className="allChannels" onClick={() => {
+                    setVisible1(true)
+                }}> */}
+                    {/* <i className='iconfont allChannels' onClick={() => {
+                    setVisible1(true)
+                }}>&#xe600;</i> */}
+                {/* </div> */}
                 <Tabs defaultActiveKey='2'>
                     <Tabs.Tab title='直播' key='1'>
                         直播
                     </Tabs.Tab>
                     <Tabs.Tab title='精选' key='2'>
-                        <Banners banners={banners} />
-                        <Video video={video} />
+                        <Scroll>
+                            <Banners banners={banners} />
+                            <Video video={video} />
+                        </Scroll>
                     </Tabs.Tab>
                     <Tabs.Tab title='热门' key='3'>
                         热门
@@ -58,15 +73,9 @@ export default function Classify() {
                         生活
                     </Tabs.Tab>
                 </Tabs>
-                <div
-                    onClick={() => {
-                        setVisible1(true)
-                    }}
-                >
-                    <div className="allChannels">
-                        <i className='iconfont'>&#xe600;</i>
-                    </div>
-                </div>
+                <i className='iconfont allChannels' onClick={() => {
+                    setVisible1(true)
+                }}>&#xe600;</i>
                 <Popup
                     visible={visible1}
                     showCloseButton

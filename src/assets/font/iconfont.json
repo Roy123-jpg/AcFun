@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "30562167",
+      "name": "AcFun-我的",
+      "font_class": "HH5J__F9GNJ9PLT_K___20P",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "30562187",
+      "name": "AcFun-发现",
+      "font_class": "a-02X1NX_KDXU4MGXBWWW2TB",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "30562194",
+      "name": "AcFun-视频",
+      "font_class": "a-1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "30562218",
+      "name": "AcFun-动态",
+      "font_class": "WK_UNA1_EN_VD1WRO4_I_FK",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "1718321",
       "name": "返回",
       "font_class": "fanhui",
